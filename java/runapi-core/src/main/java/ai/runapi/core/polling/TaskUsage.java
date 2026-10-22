@@ -1,0 +1,24 @@
+package ai.runapi.core.polling;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+/** RunAPI-owned cost on a completed Task envelope. */
+@JsonIgnoreProperties(ignoreUnknown = true)
+public final class TaskUsage {
+  @JsonProperty("cost")
+  private Double cost;
+
+  @JsonProperty("generated_images")
+  private Integer generatedImages;
+
+  /** Delivered image count, including the base image and decomposed layers. */
+  public Integer getGeneratedImages() {
+    return generatedImages;
+  }
+
+  /** Settled Task cost in USD. */
+  public Double getCost() {
+    return cost;
+  }
+}

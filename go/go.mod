@@ -1,0 +1,5 @@
+module github.com/runapi-ai/vidu-sdk/go
+
+go 1.26
+
+require github.com/runapi-ai/core-sdk/go v0.5.1
