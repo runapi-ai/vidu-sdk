@@ -5,7 +5,7 @@ Create image-to-video or reference-to-video tasks, retrieve their status, or use
 ## Install
 
 ```kotlin
-implementation("ai.runapi:runapi-vidu:0.1.0")
+implementation("ai.runapi:runapi-vidu:0.1.1")
 ```
 
 ## Quick start
